@@ -39,5 +39,12 @@
         ?>
         </tbody>
     </table>
+
+<?php
+if (isset($_GET['message'])){
+    echo "<h6 id='error-message'>".$_GET['message']."</h6>";
+}
+?>
+
 <?php include 'modal.php' ?>
 <?php include 'footer.php' ?>

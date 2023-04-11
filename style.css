@@ -18,3 +18,7 @@
     align-items: center;
     justify-content: space-between;
 }
+#error-message{
+    text-align: center;
+    color: red;
+}
