@@ -2,10 +2,10 @@
 <?php include 'db.php' ?>
     <div class="wrap-1">
         <div class="wrapp-1__item">
-            <h2 id="main_sub_title">All students</h2>
+            <h2 id="main_sub_title">Список студентов</h2>
         </div>
         <div class="wrapp-1__item">
-            <button class="btn btn-primary">Добавить студента</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Добавить студента</button>
         </div>
     </div>
     <table class="table table-hover table-bordered">
@@ -39,4 +39,5 @@
         ?>
         </tbody>
     </table>
+<?php include 'modal.php' ?>
 <?php include 'footer.php' ?>
