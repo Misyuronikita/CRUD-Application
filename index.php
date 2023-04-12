@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+<?php include 'header.html' ?>
 <?php include 'db.php' ?>
     <div class="wrap-1">
         <div class="wrapp-1__item">
@@ -49,5 +49,5 @@ if(isset($_GET['insert_msg'])){
 }
 ?>
 
-<?php include 'modal.php' ?>
-<?php include 'footer.php' ?>
+<?php include 'modal.html' ?>
+<?php include 'footer.html' ?>

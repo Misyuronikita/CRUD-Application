@@ -24,7 +24,5 @@ if(isset($_POST['add_students'])){
         else{
             header ('Location:index.php?insert_msg=Студент успешно добавлен');  // перенаправление на нужную страницу
         }
-
-
     }
 }
