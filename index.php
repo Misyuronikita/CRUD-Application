@@ -15,6 +15,8 @@
             <th>Фамилия</th>
             <th>Имя</th>
             <th>Возраст</th>
+            <th>Обновление</th>
+            <th>Удаление</th>
         </tr>
         </thead>
         <tbody>
@@ -32,6 +34,8 @@
                     <td><?= $row['first_name'] ?></td>
                     <td><?= $row['last_name'] ?></td>
                     <td><?= $row['age'] ?></td>
+                    <td><a href="update_main_page.php?id=<?= $row['id'] ?>" class="btn btn-success">Обновить</a></td>
+                    <td><a href="delete_main_page.php?id=<?= $row['id'] ?>" class="btn btn-danger">Удалить</a></td>
                 </tr>
                 <?php
             }
@@ -46,6 +50,9 @@ if (isset($_GET['message'])){
 }
 if(isset($_GET['insert_msg'])){
     echo "<h6 id='success-message'>".$_GET['insert_msg']."</h6>";
+}
+if(isset($_GET['update_msg'])){
+    echo "<h6 id='update-message'>".$_GET['update_msg']."</h6>";
 }
 ?>
 
