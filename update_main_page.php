@@ -12,7 +12,6 @@ if(isset($_GET['id'])){
     }
     else{
         $row = mysqli_fetch_row($result);
-        print_r($row);
     }
 }
 ?>

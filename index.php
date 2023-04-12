@@ -54,6 +54,9 @@ if(isset($_GET['insert_msg'])){
 if(isset($_GET['update_msg'])){
     echo "<h6 id='update-message'>".$_GET['update_msg']."</h6>";
 }
+if(isset($_GET['delete_msg'])){
+    echo "<h6 id='delete-message'>".$_GET['delete_msg']."</h6>";
+}
 ?>
 
 <?php include 'modal.html' ?>

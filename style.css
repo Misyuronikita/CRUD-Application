@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-between;
 }
-#error-message{
+#error-message,#delete-message{
     text-align: center;
     color: red;
     font-size: 22px;
@@ -33,3 +33,4 @@
     color: #1a76d2;
     font-size: 22px;
 }
+
