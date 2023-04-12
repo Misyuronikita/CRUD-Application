@@ -21,4 +21,10 @@
 #error-message{
     text-align: center;
     color: red;
+    font-size: 22px;
+}
+#success-message{
+    text-align: center;
+    color: #00c100;
+    font-size: 22px;
 }

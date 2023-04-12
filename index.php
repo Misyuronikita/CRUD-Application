@@ -44,6 +44,9 @@
 if (isset($_GET['message'])){
     echo "<h6 id='error-message'>".$_GET['message']."</h6>";
 }
+if(isset($_GET['insert_msg'])){
+    echo "<h6 id='success-message'>".$_GET['insert_msg']."</h6>";
+}
 ?>
 
 <?php include 'modal.php' ?>

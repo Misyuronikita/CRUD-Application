@@ -8,7 +8,12 @@ if(isset($_POST['add_students'])){
     if(empty($firstName)){
         header('location:index.php?message=Необходимо заполнить поле "Имя"!');
     }
-
+    elseif (empty($lastName)){
+        header('location:index.php?message=Необходимо заполнить поле "Фамилия"!');
+    }
+    elseif(empty($age)){
+        header('location:index.php?message=Необходимо заполнить поле "Возраст"!');
+    }
     else{
         $query = "INSERT INTO `students` (`first_name`, `last_name`, `age`) VALUES ('$firstName', '$lastName', '$age')";
         $result = mysqli_query($connection, $query);
@@ -17,8 +22,7 @@ if(isset($_POST['add_students'])){
             die("Query failed" . mysqli_error());
         }
         else{
-            header ('Location:index.php');  // перенаправление на нужную страницу
-            exit();
+            header ('Location:index.php?insert_msg=Студент успешно добавлен');  // перенаправление на нужную страницу
         }
 
 
